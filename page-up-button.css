@@ -1,0 +1,72 @@
+/* page-up.css by sakanafurai | v1.0.0. | License: MIT */
+
+/* Load Base64 font */
+/* "Font Awesome 6 Free" */
+/* License: SIL Open source license 1.0(https://opensource.org/license/ofl-1-1) */
+@font-face {
+  font-family: 'Page-up';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("data:font/woff2;base64,d09GMgABAAAAAAKIAA0AAAAABlgAAAIzAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGiAGYACCQhEIClhzCwoAATYCJAMQBCAFhHAHMhuEBRHVm4EgvkiwqWhdDv6VcAwVxl04+82yY2zarVANDT4Tz8PvDzz3/TcQJcJMW1tdg5CWoSTXlQI3OP2rtSH6EjIbX72hIZLZ+bkXA06QACjM9nQRaz24pvALHID/30d7BUX60y/DZxRJSVQ8ng7QB0TbHZaQFMXMzEiLV/3FEHjn1Ve87wHeP3NB0B29DVZQURAEtchpHciCbMXsvPG3IfZTdGlkkN4QjPZ2f/u6Ul63dwFPYD4CmZo7GC1o0GC4gAkawXDVaFRV+LajbYE/d3odFyAdCSAFBQAQzL2kbRVQQWcEIzEeUAGQkesvycmxAStzwe7+56WjA1dlRdJJF+d7Bq3+cqfS4/Lz54706HGkTXr96jUlRkRSfV8PgtBx281oc68Jv3dyccZuG21L3uSBzgoIp4LF/M43AgCoBVBQGC2oRgoIIgCgp9sCmOeigOjku4CiaAMa4zJPQNUpOwV00C1XBHTUKY80UrvgPAGip7dQVP+hMSsFqp7ZDh0MzMG37ahnrlsCwJrY4iUJvCAGrdSBYY8TVoJiK7k9Jw7HL2HPkSRwo4RIzs/Xn7Z1w5m3xkSaqabAFi/pXn1UK3Vg2OOElaDYSl9YjeOX6DYp+cV4j6RdkL5GMz+brZHnrswQCHOCYJQp9YcQOB4UwINFJ4HtA8yWGdFsYrLaQGsCgeNBAXNRDS2w/RJvCC3KU11FKGutCb4I6uz1tqDveMPHKZomrGZCuCSLrZjam5emAAAA") format("woff2"); }
+
+/* Please replace with your favorite color */
+:root {
+  --bg: #bbb; /* Background color */
+  --icon-color: #fff;  /* Icon color */
+  --icon-color-outlined: #777; /* Outlined icon and border color */
+}
+
+a.page-up::before {
+  content: "\f077"
+}
+
+a.page-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-family: "Page-up";
+  font-weight: 400;
+  background: var(--bg);
+  color: var(--icon-color);
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+
+  font-size: 30px;
+  line-height: 50px;
+
+  width: 50px;
+  height: 50px;
+  padding: 0;
+
+  letter-spacing: 0;
+}
+
+a.page-up:hover {
+  color: #fff;
+}
+
+/* Squared */
+a.page-up.squared {
+  border-radius: 5px;
+}
+
+/* Rounded */
+a.page-up.rounded {
+  border-radius: 50%;
+}
+
+/* Outlined */
+a.page-up.outlined {
+  background: transparent;
+  color: var(--icon-color-outlined);
+  border: 2px solid var(--icon-color-outlined);
+}
+
